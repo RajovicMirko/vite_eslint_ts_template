@@ -1,5 +1,5 @@
 {
-  "name": "base_project",
+  "name": "vite_eslint_ts_template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,8 @@
     "start": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -25,6 +26,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.8",
+    "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
