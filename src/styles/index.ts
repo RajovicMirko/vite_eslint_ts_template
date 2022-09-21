@@ -1,4 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
+import colors from './colors';
+import { convertHexToRGBA } from './helpers';
+
+export const styledTheme = {
+  colors,
+  convertHexToRGBA,
+};
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -17,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color: ${colors.palette.grayDark};
   }
 `;
 
